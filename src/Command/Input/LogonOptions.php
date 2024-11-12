@@ -85,7 +85,7 @@ final class LogonOptions
     public function parseInput(InputInterface $input): static
     {
         $options = $input->getOptions();
-        $this->noLog = Cast::toValueOrNull($options['NOLOG'] ?? $this->noLog, Cast::toBool(...));
+        $this->noLog = Cast::toBool($options['NOLOG'] ?? $this->noLog);
         $this->username = Cast::toValueOrNull($options['USER'] ?? $this->username, Cast::toString(...));
         $this->password = Cast::toValueOrNull($options['PASS'] ?? $this->password, Cast::toString(...));
         $this->connectIdentifier = Cast::toValueOrNull(

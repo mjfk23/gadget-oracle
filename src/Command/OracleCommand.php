@@ -36,7 +36,7 @@ abstract class OracleCommand extends ShellCommand
     protected function getShellArgs(InputInterface $input): array
     {
         return [
-            $this->oracleOptions->parseInput($input)->createShellArguments() ?? []
+            $this->oracleOptions->parseInput($input)->createShellArguments()
         ];
     }
 }
