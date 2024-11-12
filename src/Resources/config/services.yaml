@@ -1,0 +1,17 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Gadget\Oracle\:
+    resource: "../../../src/"
+    exclude:
+      - "../../../src/DependencyInjection/"
+      - "../../../src/Entity/"
+      - "../../../src/Kernel.php"
+
+  Gadget\Oracle\Command\Input:
+    arguments:
+      $username: "%env(default::ORACLE_USER)%"
+      $password: "%env(default::ORACLE_PASS)%"
+      $connectIdentifier: "%env(default::ORACLE_CONN)%"
