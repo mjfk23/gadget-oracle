@@ -10,7 +10,7 @@ services:
       - "../../../src/Entity/"
       - "../../../src/Kernel.php"
 
-  Gadget\Oracle\Command\Input:
+  Gadget\Oracle\Command\Input\LogonOptions:
     arguments:
       $username: "%env(default::ORACLE_USER)%"
       $password: "%env(default::ORACLE_PASS)%"
