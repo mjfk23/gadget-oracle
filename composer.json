@@ -17,14 +17,14 @@
     "source": "https://github.com/mjfk23/gadget-oracle"
   },
   "require": {
-    "php": ">=8.1",
+    "php": "^8.1",
     "ext-ctype": "*",
     "ext-iconv": "*",
-    "mjfk23/gadget-console": "^1.0"
+    "mjfk23/gadget-console": "^2.0"
   },
   "require-dev": {
-    "phpstan/phpstan": "^1.12",
-    "phpstan/phpstan-strict-rules": "^1.6",
+    "phpstan/phpstan": "^2.0",
+    "phpstan/phpstan-strict-rules": "^2.0",
     "phpstan/extension-installer": "^1.4",
     "squizlabs/php_codesniffer": "^3.10"
   },
@@ -39,7 +39,10 @@
   },
   "autoload": {
     "psr-4": {
-      "Gadget\\Oracle\\": "src/"
+      "Gadget\\Oracle\\": [
+        "src/",
+        "bundle/"
+      ]
     }
   },
   "scripts": {

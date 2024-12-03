@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Gadget\Oracle\Command;
 
-use Gadget\Console\Shell\ProcessShellEnv;
-use Gadget\Oracle\Command\Input\SqlPlusOptions;
+use Gadget\Oracle\Input\SqlPlusOptions;
+use Gadget\Process\ProcessShellEnv;
 use Symfony\Component\Console\Attribute\AsCommand;
 
 #[AsCommand('oracle:sqlplus', 'SQL*Plus executes SQL, PL/SQL and SQL*Plus statements.')]

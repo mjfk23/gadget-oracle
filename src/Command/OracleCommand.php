@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Gadget\Oracle\Command;
 
 use Gadget\Console\Command\ShellCommand;
-use Gadget\Console\Shell\ProcessShellEnv;
-use Gadget\Oracle\Command\Input\OracleOptions;
+use Gadget\Oracle\Input\OracleOptions;
+use Gadget\Process\ProcessShellEnv;
 use Symfony\Component\Console\Input\InputInterface;
 
 abstract class OracleCommand extends ShellCommand

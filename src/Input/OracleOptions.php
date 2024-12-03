@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Gadget\Oracle\Command\Input;
+namespace Gadget\Oracle\Input;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -82,6 +82,6 @@ abstract class OracleOptions
         return array_filter([
             $this->command ?? '',
             ...array_values($shellArgs)
-        ]);
+        ], fn($v) => $v !== null);
     }
 }

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Gadget\Oracle\Command\Input;
+namespace Gadget\Oracle\Input;
 
 use Gadget\Io\Cast;
 use Symfony\Component\Console\Input\InputInterface;
@@ -192,7 +192,7 @@ final class SqlLoaderOptions extends OracleOptions
     {
         parent::parseInput($input);
 
-        /** @var array<string,mixed> $options */
+        /** @var (mixed[]|bool|float|int|string|null)[] $options */
         $options = $input->getOptions();
         $this->control = Cast::toValueOrNull($options['control'] ?? null, Cast::toString(...));
         $this->log = Cast::toValueOrNull($options['log'] ?? null, Cast::toString(...));

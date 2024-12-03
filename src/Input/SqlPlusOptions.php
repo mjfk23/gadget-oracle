@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Gadget\Oracle\Command\Input;
+namespace Gadget\Oracle\Input;
 
 use Gadget\Io\Cast;
 use Symfony\Component\Console\Input\InputArgument;

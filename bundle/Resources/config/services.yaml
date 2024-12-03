@@ -5,10 +5,6 @@ services:
 
   Gadget\Oracle\:
     resource: "../../../src/"
-    exclude:
-      - "../../../src/DependencyInjection/"
-      - "../../../src/Entity/"
-      - "../../../src/Kernel.php"
 
   Gadget\Oracle\Command\Input\LogonOptions:
     arguments:

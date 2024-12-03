@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Gadget\Oracle\Command;
 
-use Gadget\Console\Shell\ProcessShellEnv;
-use Gadget\Oracle\Command\Input\SqlLoaderOptions;
+use Gadget\Oracle\Input\SqlLoaderOptions;
+use Gadget\Process\ProcessShellEnv;
 use Symfony\Component\Console\Attribute\AsCommand;
 
 #[AsCommand('oracle:sqlldr', 'SQL*Loader loads data from external files into Oracle Database tables.')]
