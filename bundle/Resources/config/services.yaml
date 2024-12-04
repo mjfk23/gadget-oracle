@@ -6,7 +6,7 @@ services:
   Gadget\Oracle\:
     resource: "../../../src/"
 
-  Gadget\Oracle\Command\Input\LogonOptions:
+  Gadget\Oracle\Input\LogonOptions:
     arguments:
       $username: "%env(default::ORACLE_USER)%"
       $password: "%env(default::ORACLE_PASS)%"
