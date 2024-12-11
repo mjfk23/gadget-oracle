@@ -20,6 +20,7 @@
     "php": "^8.1",
     "ext-ctype": "*",
     "ext-iconv": "*",
+    "doctrine/dbal": "^4.2",
     "mjfk23/gadget-console": "^2.0"
   },
   "require-dev": {
